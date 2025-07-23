@@ -1,10 +1,11 @@
-<nav class="app-header navbar navbar-expand bg-body">
 <?php
-require 'connect.php';
+require('../connect.php');
 if (empty($_SESSION['username'])){
-    header('lacation:../login.php');
+    header('location:../login.php');
 }   
 ?>
+<nav class="app-header navbar navbar-expand bg-body">
+
 <!--begin::Container-->
         <div class="container-fluid">
           <!--begin::Start Navbar Links-->
